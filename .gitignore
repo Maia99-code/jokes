@@ -1,0 +1,29 @@
+# Archivos de configuración de entorno
+.env
+
+# Dependencias y directorios generados por npm
+node_modules/
+package-lock.json
+
+# Archivos de log
+logs/
+
+# Archivos de respaldo
+*.bak
+*.backup
+
+# Archivos de prueba y resultados de prueba
+*.test.js
+*.spec.js
+coverage/
+
+# Otros archivos específicos del editor
+.vscode/
+*.swp
+
+# Archivos de configuración local de desarrollo
+config.js
+
+# Otros archivos y directorios generados
+.DS_Store
+Thumbs.db

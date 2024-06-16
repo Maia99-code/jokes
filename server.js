@@ -1,8 +1,8 @@
-const express = require('express');
-const mongoose = require('mongoose');
-const bodyParser = require('body-parser');
-const jokesRoutes = require('./routes/jokes.routes.js');
-const conectarDB = require('./configuration/mongoose.config');
+const express = require("express");
+const mongoose = require("mongoose");
+const bodyParser = require("body-parser");
+const jokesRoutes = require("./routes/jokes.routes.js");
+const conectarDB = require("./configuration/mongoose.config");
 
 const app = express();
 const PORT = 3000;
@@ -14,7 +14,7 @@ app.use(bodyParser.json());
 conectarDB();
 
 // Rutas de la API
-app.use('/api', jokesRoutes);
+app.use("/api", jokesRoutes);
 
 // Iniciar servidor
 app.listen(PORT, () => {
